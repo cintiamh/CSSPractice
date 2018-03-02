@@ -87,3 +87,75 @@ Linking to parts of the same page:
 ```
 
 ### Best practices
+
+#### HTML Coding practices
+
+* Write standards-compliant markup: HTML is forgiving, but can be unpredictable.
+* Make use of semantic elements: more semantic == more accessible
+* Use the proper document structure: always use `<!DOCTYPE html>`, `<html>`, `<head>`, and `<body>`
+* Keep the syntax organized:
+  - lowercase within elements names, attributes, and values
+  - indent nested elements
+  - double quotes
+  - use `/` at the end of self-closing elements
+  - omit values on boolean attributes
+* Use practical id and class values: values related to content (not style)
+* Use the alternative text attribute on images
+  - `<img src="puppy.jpg" alt="A beautiful, two-year-old hound mix puppy">`
+* Separate content from style: don't use inline style within HTML.
+* Avoid a case of "Divitis": avoid adding DIVs just to help with styling - prefer semantic elements.
+* Continually refactor code: remember to remove old code and styles as necessary.
+
+#### CSS coding practices
+
+* Organize code with comments: logical groups with comments, build a table of contents at the top with comments.
+* Write CSS using multiple lines & spaces
+* Use proper class names
+* Build proficient selectors: avoid ids, nest only 2 to 3 levels deep, shorter and primarily direct selectors.
+* Use specific classes when necessary
+* Use shorthand properties & values: instead of using `margin-top, margin-right, margin-left, margin-bottom`, just use `margin`
+* Use shorthand hexadecimal color values
+* Drop units from zero values
+* Group and align vendor prefixes: group and indent individual vendor prefixes so that the property names stack vertically, as do their values.
+* Modularize styles for reuse
+
+## Linking internal and external pages
+
+### The difference between absolute and relative paths
+
+* Relative path
+* Absolute path: the browser goes back to the internet and finds your site, and finds the file within your directory.
+
+  If you're linking to pages on your own site, using relative path will make your site respond quicker.
+
+### CSS Link pseudo-classes
+
+* `:link` - unvisited links
+* `:visited` - visited links
+* `:hover` - hover state
+* `:active` - activated state (short duration when clicking)
+* `:focus` - focused state
+
+#### Combining pseudo-classes
+
+```css
+a:link:hover {
+  color: green;
+}
+```
+
+#### Order of pseudo-classes
+
+1. `a { }`
+2. `a:link { }`
+3. `a:visited { }`
+4. `a:hover {}`
+5. `a:focus { }`
+6. `a:active { }`
+
+In modern browsers, `:link` and `:visited` will behave differently in order to protect the privacy of a visitor's history.
+
+## Working with images, video and other media
+
+* Optimize your image sizes and filetypes.
+* Trade-offs: image size x quality.
