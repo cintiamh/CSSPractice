@@ -159,3 +159,31 @@ In modern browsers, `:link` and `:visited` will behave differently in order to p
 
 * Optimize your image sizes and filetypes.
 * Trade-offs: image size x quality.
+
+### Adding media
+https://learn.shayhowe.com/html-css/adding-media/
+
+#### Adding images
+
+```html
+<img src="dog.jpg" alt="A black, brown, and white dog wearing a kerchief">
+```
+
+Most supported image formats:
+* `gif`
+* `jpg`: photographs - (faster load times) high color counts while maintaining a decent file size.
+* `png`: icons & background patterns - Images with transparency or low color counts.
+
+The `<img>` element is `inline` by default.
+
+To have the page content around the image element, you need to use `float`:
+
+```css
+img {
+  background: #eaeaed;
+  border: 1px solid #9799a7;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+}
+```
