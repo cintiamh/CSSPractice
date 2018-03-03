@@ -2,6 +2,7 @@
 https://learn.shayhowe.com/html-css/
 
 1. [Building your first web page](#building-your-first-web-page)
+2. [Getting to know HTML](#getting-to-know-html)
 
 # Building your first web page
 
@@ -77,3 +78,5 @@ https://learn.shayhowe.com/html-css/
 ## Using CSS resets
 
 Eric Meyer's reset https://meyerweb.com/eric/tools/css/reset/
+
+# Getting to know HTML
