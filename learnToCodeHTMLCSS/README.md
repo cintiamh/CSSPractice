@@ -18,3 +18,40 @@ https://learn.shayhowe.com/html-css/
 * Attributes: properties used to provide additional information about the element.
 
 ![](html-syntax-outline.png?raw=true)
+
+## Setting up the HTML document structure
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello World!</title>
+</head>
+<body>
+  <h1>Hello World!</h1>
+  <p>This is a web page.</p>
+</body>
+</html>
+```
+
+### Self-closing elements
+
+* `<br>`
+* `<embed>`
+* `<hr>`
+* `<img>`
+* `<input>`
+* `<link>`
+* `<meta>`
+* `<param>`
+* `<source>`
+* `<wbr>`
+
+## Common CSS terms
+
+* Selectors
+* Properties
+* Values
+
+![](css-syntax-outline.png?raw=true)
