@@ -148,3 +148,10 @@ They also help search engines to index and determine the content on a page.
 HTML5 introduced new structurally based elements.
 
 ![](building-structure.png?raw=true)
+
+* `<header>` used to identify the top of a page, article, section, or other segment of a page.
+* `<nav>` identifies a section of major navigational links on a page.
+* `<article>` is used to identify a section of independent, self-contained content within the element could be replicated elsewhere without any confusion.
+* `<section>` used to identify a thematic grouping of content.
+* `<aside>` holds content, such as sidebars, inserts, or brief explanations, that is related to the content surrounding it.
+* `<footer>` identifies the closing or end of a page, article, section.
