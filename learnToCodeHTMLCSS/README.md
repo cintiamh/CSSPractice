@@ -55,3 +55,25 @@ https://learn.shayhowe.com/html-css/
 * Values
 
 ![](css-syntax-outline.png?raw=true)
+
+## Working with selectors
+
+* Type selectors: element type
+  - `div { ... }`
+* Class selectors: element's class attribute (multiple)
+  - `.awesome { ... }`
+* ID selectors: element's id attribute (unique)
+  - `#cintia { ... }`
+* Additional selectors (later)
+
+## Referencing CSS
+
+```html
+<head>
+  <link rel="stylesheet" href="main.css">
+</head>
+```
+
+## Using CSS resets
+
+Eric Meyer's reset https://meyerweb.com/eric/tools/css/reset/
