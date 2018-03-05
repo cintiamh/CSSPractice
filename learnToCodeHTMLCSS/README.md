@@ -155,3 +155,36 @@ HTML5 introduced new structurally based elements.
 * `<section>` used to identify a thematic grouping of content.
 * `<aside>` holds content, such as sidebars, inserts, or brief explanations, that is related to the content surrounding it.
 * `<footer>` identifies the closing or end of a page, article, section.
+
+## Creating Hyperlinks
+
+```html
+<a href="http://shayhowe.com">Shay</a>
+```
+
+### Relative & Absolute paths
+
+* Relative paths: do not include the domain. Pointing to another page in the same website.
+* Absolute path: links to other websites outside of the current one.
+
+### Linking to an email address
+
+```html
+<a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>
+```
+
+### Opening links in a new window
+
+```html
+<a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
+```
+
+### Linking to parts of the same page
+
+```html
+<body id="top">
+  ...
+  <a href="#top">Back to top</a>
+  ...
+</body>
+```
