@@ -3,6 +3,7 @@ https://learn.shayhowe.com/html-css/
 
 1. [Building your first web page](#building-your-first-web-page)
 2. [Getting to know HTML](#getting-to-know-html)
+3. [Getting to know CSS](#getting-to-know-css)
 
 # Building your first web page
 
@@ -188,3 +189,5 @@ HTML5 introduced new structurally based elements.
   ...
 </body>
 ```
+
+# Getting to know CSS
