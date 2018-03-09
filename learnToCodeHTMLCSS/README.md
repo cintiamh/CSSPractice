@@ -4,6 +4,7 @@ https://learn.shayhowe.com/html-css/
 1. [Building your first web page](#building-your-first-web-page)
 2. [Getting to know HTML](#getting-to-know-html)
 3. [Getting to know CSS](#getting-to-know-css)
+4. [Opening the box model](#opening-the-box-model)
 
 # Building your first web page
 
@@ -191,3 +192,76 @@ HTML5 introduced new structurally based elements.
 ```
 
 # Getting to know CSS
+
+Within CSS, all styles cascade from the top of a style sheet to the bottom.
+
+## Calculating specificity
+
+1. `0-0-1`: type selector
+2. `0-1-0`: class selector
+3. `1-0-0`: ID selector
+
+## Combining selectors
+
+When selectors are combined they should be read from right to left.
+
+```css
+.hotdog p.mustard {
+  background: yellow;
+}
+```
+
+The best practice is to not prefix a class selector with a type selector.
+
+## Layering Styles with multiple classes
+
+```html
+<a class="btn btn-danger">...</a>
+<a class="btn btn-success">...</a>
+```
+
+```css
+.btn {
+  font-size: 16px;
+}
+.btn-danger {
+  background: red;
+}
+.btn-success {
+  background: green;
+}
+```
+
+## Common CSS property values
+
+### Color
+
+Adobe Kuler: https://color.adobe.com/create/color-wheel/
+
+### RGB & RGBa
+
+RGB colors have the ability to create semi-transparent colors using RGBa.
+
+```css
+.task {
+  background: rgba(128, 0, 0, .25);
+}
+.count {
+  background: rgba(255, 255, 0, 1);
+}
+```
+
+### Length
+
+* Absolute lengths
+  - Pixels: 1px == 1/96 in.
+* Relative lengths
+  - Percentages(`%`): are defined in relation to the length of another object.
+    - helpful for setting the height and width of elements and building out a web page's layout.
+  - Em (`em`): its length is calculated based on an element's font size.
+    - When a font size is not explicitly state for an element, the `em` unit will be relative to the font size of the closest parent element with a stated font size.
+    - Used for:
+      - styling text (font size)
+      - spacing around text (margin & padding)
+
+# Opening the box model
