@@ -265,3 +265,40 @@ RGB colors have the ability to create semi-transparent colors using RGBa.
       - spacing around text (margin & padding)
 
 # Opening the box model
+
+## How are elements displayed?
+
+### Display
+
+* `display`
+  - `block`
+  - `inline`
+  - `inline-block`: allow element to behave as a block-level element, accepting all box model properties. However, the element will be displayed in line with other elements, and it will not begin on a new line by default.
+  - `none`: completely hide an element, as if that element doesn't exist.
+
+## What is box model
+
+Every element on a page is a rectangular box and may have `width`, `height`, `padding`, `border`, and `margin`.
+
+![](box-model.png?raw=true)
+
+* `width`
+  - block-level: default width `100%`
+  - inline-level expand and contract horizontally to accommodate their content.
+  - Inline-level elements cannot have a fixed size, thus the width and height properties are only relevant to non-inline elements.
+* `height`
+  - default height is determined by its content.
+* `border`
+  - `width`
+  - `color`
+  - `style`
+    - `solid`
+    - `double`
+    - `dashed`
+    - `dotted`
+    - `none`
+* `border-radius`
+* `box-sizing`
+  - `content-box`: default. The size of an element begins with the `width` and `height` properties, and then any `padding`, `border`, and `margin` property values are added from there.
+  - `padding-box`
+  - `border-box`
