@@ -5,6 +5,7 @@ https://learn.shayhowe.com/html-css/
 2. [Getting to know HTML](#getting-to-know-html)
 3. [Getting to know CSS](#getting-to-know-css)
 4. [Opening the box model](#opening-the-box-model)
+5. [Positioning content](#positioning-content)
 
 # Building your first web page
 
@@ -302,3 +303,15 @@ Every element on a page is a rectangular box and may have `width`, `height`, `pa
   - `content-box`: default. The size of an element begins with the `width` and `height` properties, and then any `padding`, `border`, and `margin` property values are added from there.
   - `padding-box`
   - `border-box`
+
+```css
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	       -box-sizing: border-box;
+}
+```
+
+# Positioning content
