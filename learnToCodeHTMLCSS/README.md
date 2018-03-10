@@ -315,3 +315,98 @@ Every element on a page is a rectangular box and may have `width`, `height`, `pa
 ```
 
 # Positioning content
+
+## Positioning with floats
+
+`float` position an element to the left or right of its parent element.
+All other elements on the page will then flow around the floated element.
+
+```css
+img {
+  float: left;
+}
+```
+
+To prevent content from wrapping around floated elements, we need to clear, or contain, those floats and return the page to its normal flow.
+
+### Clearing floats
+
+* `clear`
+  - `left`
+  - `right`
+  - `both`
+
+```css
+footer {
+  clear: both;
+}
+```
+
+### Containing floats
+
+Containing floats does help to ensure that all of our styles will be rendered properly.
+
+The floated elements must reside within a parent element.
+The parent element will act as a container, leaving the flow of the document completely normal outside of it.
+
+```css
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+```
+
+The technique shown here for containing elements is know as a “clearfix” and can often be found in other websites with the class name of `clearfix` or `cf`.
+
+## Positioning with inline-block
+
+The `inline-block` method is helpful for layering out pages or for placing elements next to one another within a line.
+
+```css
+section {
+  display: inline-block;
+  margin: 0 1.5%;
+  width: 30%;
+}
+```
+
+But inline-block elements include a single space between them (adding the space to the width).
+
+Solutions for this:
+```html
+<section>
+  ...
+</section><section>
+  ...
+</section><section>
+  ...
+</section>
+```
+
+or
+```html
+<section>
+  ...
+</section><!--
+--><section>
+  ...
+</section><!--
+--><section>
+  ...
+ </section>
+```
+
+## Uniquely positioning elements
+
+* `position`
+  - `static` - default
+  - `relative`
+  - `absolute`
