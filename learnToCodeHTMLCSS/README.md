@@ -404,9 +404,28 @@ or
  </section>
 ```
 
+## Creating reusable layouts
+
+* inline-block elements to create the grid or layout of a page.
+* floats when you want the content to wrap around a given element.
+
+Obs: flex- grid-
+
 ## Uniquely positioning elements
 
+When we want to precisely position an element we can use the `position` property in connection with box offset properties.
+
+The `position` property identifies how an element is positioned on a page and whether or not it will appear within the normal flow of a document.
+
 * `position`
-  - `static` - default
+  - `static` - default - exists in the normal flow of a document and it doesn't accept any box offset properties.
   - `relative`
+    - element appears within the normal flow of a page
+    - not allow other elements to flow around it.
+    - allows an element's display position to be modified with the box offset properties.
   - `absolute`
+    - element won't appear within the normal flow of a document.
+    - the original space and position of the absolutely positioned element will not be preserved.
+    - these elements are moved in a relation to their closest relatively positioned parent element.
+
+When we position the element using the box offset properties, the element overlaps the element below it rather than moving that element down as the `margin` or `padding` properties would.
